@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Joe Zhang</title>
 <!-- <link href="assets/css/style.css" rel="stylesheet"/> -->
-<!-- Font Awesome Kit -->
+<!-- Font Awesome Personal Website Kit -->
 <script src="https://kit.fontawesome.com/c9e58096f2.js" crossorigin="anonymous"></script>
 <style>
 body {
@@ -74,13 +74,21 @@ body {
 #right-column p {
     font-size: 1.25rem;
 }
+#right-column p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333333;
+}
+#right-column p a:hover {
+    text-decoration: underline;
+}
 @media (max-width: 768px) {
     #grid-container {
     grid-template-columns: 1fr;
     margin-top: 2rem;
     }
     #left-column {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     }
 }
 </style>
@@ -94,25 +102,36 @@ body {
                 <div id="author-profile-name">Joe Zhang</div>
                 <div class="contact">
                     <i class="fas fa-envelope"></i> 
-                    <a href="mailto:joe.z.zhang@stanford.edu"> Email</a>
+                    <a target="_blank" rel="noopener noreferrer" href="mailto:joe.z.zhang@stanford.edu"> Email</a>
                 </div>
                 <div class="contact">
                     <i class="fa-brands fa-square-linkedin"></i> 
-                    <a href="https://www.linkedin.com/in/joe-zhang98/"> LinkedIn</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joe-zhang98/"> LinkedIn</a>
                 </div>
                 <div class="contact">
                     <i class="fa-brands fa-square-x-twitter"></i> 
-                    <a href="https://x.com/joe_z_zhang/"> Twitter/X</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://x.com/joe_z_zhang/"> Twitter/X</a>
                 </div>
                 <div class="contact">
                     <i class="fa-brands fa-google-scholar"></i> 
-                    <a href="https://scholar.google.com/citations?user=PcCdicMAAAAJ&hl"> Google Scholar</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=PcCdicMAAAAJ&hl"> Google Scholar</a>
                 </div>
             </div>
         </div>
         <div id="right-column">
             <h1>Hi there!</h1>
-            <p>I am a currently a PhD student at Stanford.</p>
+            <p>
+                I am currently pursuing my PhD at <a target="_blank" rel="noopener noreferrer" href="https://www.stanford.edu/">Stanford</a>.
+            <p>
+                In my research, I like to draw on ideas and theories from a diverse array of academic fields &mdash; from computer science to psychology &mdash; to better understand the promises and perils of human-AI systems. 
+            </p>
+            </p>
+            <p>
+                Previously, I worked as a software engineer at <a target="_blank" rel="noopener noreferrer" href="https://www.glean.com/">Glean</a>. And prior to this, I received my BS in Electrical Engineering from <a target="_blank" rel="noopener noreferrer" href="https://www.princeton.edu/">Princeton</a>. During my time at Princeton, I had the privilege of interning abroad in two spectacular cities: Shanghai, China (as a data science intern at <a target="_blank" rel="noopener noreferrer" href="https://www.xiaohongshu.com/explore/">小红书 - RedNote</a>) and Hong Kong (as a research intern at <a target="_blank" rel="noopener noreferrer" href="https://www.astri.org/">ASTRI</a>). 
+            </p>
+            <p>
+                I was born in Taiyuan, Shanxi, China (Chinese name: 张钊), and grew up in Canada. Outside of work, I am an avid amateur tennis player and long distance runner. 
+            </p>
         </div>
     </div>
 </body>
