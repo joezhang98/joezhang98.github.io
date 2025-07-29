@@ -15,7 +15,7 @@ body {
     background-color: #ffffff;
     color: #222222;
 }
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 2rem;
@@ -24,54 +24,62 @@ body {
     padding: 0 2rem;
 }
 
-.left-column {
+#left-column {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.left-column .author-profile {
-    text-align: left;
-}
-.left-column img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+#photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
     object-fit: cover;
     margin-bottom: 1rem;
 }
-.left-column .name {
-    font-size: 1.5rem;
+#author-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    margin-left: 0;
+}
+#author-profile-name {
+    font-size: 1.75rem;
     font-weight: bold;
+    align-self: flex-start;
     margin-bottom: 1rem;
 }
-.left-column .contact {
+.contact {
     display: flex;
     align-items: center;
     font-size: 1rem;
     color: #333333;
-    margin: 0.25rem 0;
+    margin-bottom: 0.5rem;
 }
-.left-column .contact i {
+.contact i {
     margin-right: 0.5rem;
     min-width: 1.2rem;
-    text-align: left;
+    text-align: center;
 }
-.left-column .contact a {
+.contact a {
     text-decoration: none;
     color: #333333;
 }
-.left-column .contact a:hover {
+.contact a:hover {
     text-decoration: underline;
 }
-.right-column h1 {
+#right-column h1 {
     margin-top: 0;
 }
+#right-column p {
+    font-size: 1.25rem;
+}
 @media (max-width: 768px) {
-    .grid-container {
+    #grid-container {
     grid-template-columns: 1fr;
     margin-top: 2rem;
     }
-    .left-column {
+    #left-column {
     margin-bottom: 2rem;
     }
 }
@@ -79,14 +87,22 @@ body {
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="left-column">
-            <img src="assets/images/headshot.jpg" alt="Joe Zhang">
-            <div class="author-profile">
-                <div class="name">Joe Zhang</div>
+    <div id="grid-container">
+        <div id="left-column">
+            <img id="photo" src="assets/images/headshot.jpg" alt="Joe Zhang">
+            <div id="author-profile">
+                <div id="author-profile-name">Joe Zhang</div>
                 <div class="contact">
                     <i class="fas fa-envelope"></i> 
                     <a href="mailto:joe.z.zhang@stanford.edu"> Email</a>
+                </div>
+                <div class="contact">
+                    <i class="fa-brands fa-square-linkedin"></i> 
+                    <a href="https://www.linkedin.com/in/joe-zhang98/"> LinkedIn</a>
+                </div>
+                <div class="contact">
+                    <i class="fa-brands fa-square-x-twitter"></i> 
+                    <a href="https://x.com/joe_z_zhang/"> Twitter/X</a>
                 </div>
                 <div class="contact">
                     <i class="fa-brands fa-google-scholar"></i> 
@@ -94,9 +110,9 @@ body {
                 </div>
             </div>
         </div>
-        <div class="right-column">
-            <h1>About Me</h1>
-            <p>Hi!</p>
+        <div id="right-column">
+            <h1>Hi there!</h1>
+            <p>I am a currently a PhD student at Stanford.</p>
         </div>
     </div>
 </body>
