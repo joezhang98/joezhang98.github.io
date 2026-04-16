@@ -1,0 +1,8 @@
+sources:
+  ai-org-loyalty:
+    displayName: AI Org Loyalty
+    variant:
+      type: folder
+      value:
+        paths:
+          - /Users/joezhang/Research/phd-experiment-ideas/ai-org-culture-loyalty

@@ -1,0 +1,10 @@
+current-sources.json
+.specialties-env.json
+agent-sessions
+.sessions
+.suggestions.yml
+tmp/
+.percy-git
+journals/**/.drafts/
+journal_index.sqlite
+jobs/batches/**/state.sqlite*
