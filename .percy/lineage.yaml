@@ -1,0 +1,14 @@
+version: 1
+config:
+  code:
+    - primaryCodeFile:
+        source: ai-org-loyalty
+        path: self_s01_loyalty.ipynb
+      metadata:
+        lastUpdated: 1776364913134
+        codeHash: 84Zp8+3BICbBUoTLAa1y/g
+      localCodeDependencies: []
+      inputs:
+        - source: ai-org-loyalty
+          path: self_s01_loyalty.csv
+      outputs: []
