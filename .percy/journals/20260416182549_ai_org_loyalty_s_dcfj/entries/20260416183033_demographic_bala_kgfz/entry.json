@@ -1,0 +1,57 @@
+{
+  "parent": null,
+  "sourceDraft": "20260416182553_qybw",
+  "createdAt": "2026-04-16T18:30:33.261Z",
+  "updatedAt": "2026-04-16T18:30:33.261Z",
+  "createdBy": {
+    "type": "agent",
+    "value": {
+      "name": "Percy",
+      "session": null
+    }
+  },
+  "title": "Demographic Balance Checks + Moderation",
+  "parameters": {
+    "n_total": 60,
+    "n_human": 30,
+    "n_ai": 30,
+    "moderators_tested": [
+      "Age",
+      "Gender_binary",
+      "Education_ordinal"
+    ],
+    "DVs": [
+      "LOYALTY_3RD_Composite",
+      "LOYALTY_1ST_Composite"
+    ],
+    "moderation_model": "OLS with Condition x Moderator interaction (mean-centred)",
+    "balance_check_age_p": 0.956,
+    "balance_check_gender_p": 0.562,
+    "balance_check_ethnicity_p": 0.526,
+    "balance_check_education_p": 0.078
+  },
+  "inputFiles": [],
+  "expectedChildParameters": null,
+  "expectedChildOutcomes": null,
+  "isArchived": false,
+  "run": {
+    "timestamp": 1776364233261,
+    "source": {
+      "type": "agent",
+      "value": {
+        "name": "Percy",
+        "session": null
+      }
+    },
+    "outcomes": {
+      "age_x_LOYALTY3RD_interaction_p": 0.669,
+      "age_x_LOYALTY1ST_interaction_p": 0.811,
+      "gender_x_LOYALTY3RD_interaction_p": 0.666,
+      "gender_x_LOYALTY1ST_interaction_p": 0.723,
+      "education_x_LOYALTY3RD_interaction_p": 0.672,
+      "education_x_LOYALTY1ST_interaction_p": 0.605,
+      "any_significant_moderation": false
+    },
+    "artifactFiles": []
+  }
+}
