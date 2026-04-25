@@ -1,6 +1,0 @@
-enabled: true
-file:
-  allowWrite: []
-  denyWrite: []
-network:
-  mode: all
